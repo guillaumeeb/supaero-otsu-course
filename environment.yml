@@ -1,0 +1,19 @@
+name: otsu-environment
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy
+  - psutil
+  - toolz
+  - matplotlib
+  - dill
+  - pandas
+  - partd
+  - bokeh
+  - dask
+  - xarray
+  - s3fs
+  - gcsfs
+  - folium
+  - ipyleaflet
