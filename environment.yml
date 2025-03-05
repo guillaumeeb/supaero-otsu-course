@@ -1,4 +1,4 @@
-name: otsu-environment
+name: otsu_environment
 channels:
   - conda-forge
 dependencies:
@@ -13,7 +13,10 @@ dependencies:
   - bokeh
   - dask
   - xarray
+  - rioxarray
   - s3fs
   - gcsfs
   - folium
   - ipyleaflet
+  - eoreader
+  - eosets
