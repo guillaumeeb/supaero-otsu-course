@@ -1,12 +1,12 @@
 # Conda environment with environment.yml
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/guillaumeeb/supaero-otsu-course/HEAD?filepath=ndsi.ipynb)
+[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/guillaumeeb/supaero-otsu-course/HEAD?urlpath=lab/tree/ndsi.ipynb)
 
 A Binder-compatible repo with an `environment.yml` file.
 
 Access this Binder by clicking the blue badge above or at the following URL:
 
-http://mybinder.org/v2/gh/guillaumeeb/supaero-otsu-course/HEAD?filepath=ndsi.ipynb
+http://mybinder.org/v2/gh/guillaumeeb/supaero-otsu-course/HEAD?urlpath=lab/tree/ndsi.ipynb
 
 ## Notes
 The `environment.yml` file should list all Python libraries on which your notebooks
