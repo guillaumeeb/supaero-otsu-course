@@ -1,31 +1,29 @@
-# Conda environment with environment.yml
+# Course and exercice on Satellite imagery analysis using Xarray and Dask
 
 [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/guillaumeeb/supaero-otsu-course/HEAD?urlpath=lab/tree/ndsi.ipynb)
 
-A Binder-compatible repo with an `environment.yml` file.
+This course has been prepared for ISAE Supaero OTSU Cloud, Big Data and ML module.
+
+The end goal of this exercise is to build temporal statistics from several Seninel-2 L2A products accessed from an object storage. In order to do this, we'll read the products using (rio)Xarray with a Dask backend, directly from Google Cloud Storage, compute a NDSI over ten dates and plot snow cover evolution accross the period.
+
+By doing this, we will learn the folowing things:
+
+- How to access a Cloud storage and browse its objects,
+- How to use rioxarray to access and load Satellite imagery,
+- How to use Xarray Dataset class to build a complete timeseries dataset,
+- How to chunk our data and use Dask to perform bigger than memory or distributed analysis over our entire dataset.
+
+
+## This repository uses Conda and Binder in order to make content easily available
 
 Access this Binder by clicking the blue badge above or at the following URL:
 
 http://mybinder.org/v2/gh/guillaumeeb/supaero-otsu-course/HEAD?urlpath=lab/tree/ndsi.ipynb
 
-## Notes
-The `environment.yml` file should list all Python libraries on which your notebooks
-depend, specified as though they were created using the following `conda` commands:
+## Install localy
+
+Just use the following command:
 
 ```
-conda activate example-environment
-conda env export --from-history -f environment.yml
+conda env create -f environment.yml
 ```
-
-Note that the only libraries available to you will be the ones specified in
-the `environment.yml`, so be sure to include everything that you need! 
-
-Also note that if you skip the `--from-history`, conda may include OS-specific
-packages in `environment.yml`, which you would have to manually prune from
-`environment.yml`.  For example, confirmed macOS-specific packages that should
-be removed are:
-
-* libcxxabi=4.0.1
-* appnope=0.1.0
-* libgfortran=3.0.1
-* libcxx=4.0.1
